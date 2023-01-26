@@ -194,7 +194,7 @@ func (app *earthlyApp) actionProjectMemberList(cliCtx *cli.Context) error {
 	}
 
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-	fmt.Fprintf(w, "User Email\tPermission\tCreated\n")
+	fmt.Fprintf(w, "Registry\tUsername\n")
 	for _, m := range members {
 		fmt.Fprintf(w, "%s\t%s\t%s\n", m.UserEmail, m.Permission, m.CreatedAt.Format(dateFormat))
 	}

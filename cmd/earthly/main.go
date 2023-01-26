@@ -160,6 +160,10 @@ type cliFlags struct {
 	requestID                  string
 	buildID                    string
 	loginProvider              string
+	registryHost               string
+	registryUsername           string
+	registryPassword           string
+	registryPasswordStdin      bool
 }
 
 type analyticsMetadata struct {
